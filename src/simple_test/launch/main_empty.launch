@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ~/research/code/gazebo_example/src/simple_test/main_empty.launch -->
+<launch>
+    <arg name="robot" default="machines"/>
+    <arg name="debug" default="false"/>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find simple_test)/worlds/create.world"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+    <!-- Spawn the create by its URDF -->
+    <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+        args="-sdf -file $(find simple_test)/urdf/fish.sdf -x 0 -y 0 -z 0 -model create" />
+</launch>

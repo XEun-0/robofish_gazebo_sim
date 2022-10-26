@@ -1,2 +1,2 @@
-
+simple_test
 -DCATKIN_DEVEL_PREFIX=/home/xeuno/Development/Robotfish/devel -DCMAKE_INSTALL_PREFIX=/home/xeuno/Development/Robotfish/install -G Unix Makefiles
