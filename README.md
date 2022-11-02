@@ -9,6 +9,8 @@ http://masc.cs.gmu.edu/wiki/ROS
 
 CSULA Robotic Fish Research
 ======
+---
+## 1.2 install ROS  
 1. sudo apt-get update
 2. sudo apt-get -y install nano
 3. sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
