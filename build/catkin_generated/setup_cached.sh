@@ -7,9 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/xeuno/Development/Robotfish/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/xeuno/Development/Robotfish/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/xeuno/Development/Robotfish/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/xeuno/Development/Robotfish/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/xeuno/Development/Robotfish/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/xeuno/Development/Robotfish/src:$ROS_PACKAGE_PATH"

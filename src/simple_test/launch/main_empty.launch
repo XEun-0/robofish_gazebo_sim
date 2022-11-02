@@ -13,6 +13,6 @@
     </include>
 
     <!-- Spawn the create by its URDF -->
-    <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
-        args="-sdf -file $(find simple_test)/urdf/fish.sdf -x 0 -y 0 -z 0 -model create" />
+    <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" 
+    args="-file $(find simple_test)/urdf/fish_assembly.urdf -urdf -model Fish" output="screen" />
 </launch>
