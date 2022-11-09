@@ -1,4 +1,5 @@
-# robofish_ROS
+# Gazebo Environment for Robofish
+## using ROS and Gazebo
 Important Links to Consider
 ======
 http://masc.cs.gmu.edu/wiki/ROS  
