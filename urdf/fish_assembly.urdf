@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fish_assembly">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.092267" />
+      <inertia
+        ixx="0.00010629"
+        ixy="2.2631E-12"
+        ixz="-2.9394E-11"
+        iyy="8.9653E-05"
+        iyz="6.7515E-08"
+        izz="5.1951E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_test/meshes/base_link.STL"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="205 36 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_test/meshes/base_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="hinge">
+    <inertial>
+      <origin
+        xyz="8.97494951621058E-10 -0.000797039265124824 -0.0220000000361847"
+        rpy="0 0 0" />
+      <mass
+        value="0.0062312806476421" />
+      <inertia
+        ixx="2.60815704438985E-06"
+        ixy="-8.72442085069853E-14"
+        ixz="2.40121324673897E-15"
+        iyy="1.34325629154635E-06"
+        iyz="4.8120978290785E-15"
+        izz="1.55188300205984E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_test/meshes/hinge.STL"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="205 36 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_test/meshes/hinge.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hinge"
+    type="revolute">
+    <origin
+      xyz="-0.0027253 0.13451 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="hinge" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tail">
+    <inertial>
+      <origin
+        xyz="-1.90043207236573E-07 -0.00466325403888013 0.034717835553689"
+        rpy="0 0 0" />
+      <mass
+        value="0.0253004820243259" />
+      <inertia
+        ixx="8.88070715820997E-06"
+        ixy="2.92759610946354E-12"
+        ixz="-2.87916781318165E-11"
+        iyy="4.72425455528395E-06"
+        iyz="2.39892154620853E-08"
+        izz="4.70633595055703E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_test/meshes/tail.STL"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="205 36 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://simple_test/meshes/tail.STL"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Tail"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.044"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="hinge" />
+    <child
+      link="tail" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

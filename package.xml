@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>simple_test</name>
+  <version>0.0.0</version>
+  <description>The simple_test package</description>
+
+  <maintainer email="xeuno@todo.todo">xeuno</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <license>BSD</license>
+  <depend>roslaunch</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>rviz</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>gazebo</depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+    <architecture_independent/>
+  </export>
+</package>

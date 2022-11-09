@@ -1,0 +1,12 @@
+<!-- ~/Development/Robotfish/src/simple_test/worlds/create.world -->
+<?xml version="1.0"?>
+<sdf version="1.4">
+	<world name="createWorld">
+		<include>
+			<uri>model://sun</uri>
+		</include>
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+	</world>
+</sdf>
